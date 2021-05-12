@@ -1,0 +1,20 @@
+nav {
+    background-color: #82A8A8;
+}
+
+nav.navbar a {
+    font-family: "Sans-serif";
+    color: #ffff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+button {
+    color: #ffff;
+    background-color: #82A8A8;
+    border: 0px solid #ffff;
+    border-radius: 4px;
+    font-family: "Sans-serif";
+    font-size: 18px;
+    margin-left: 10px;
+}
