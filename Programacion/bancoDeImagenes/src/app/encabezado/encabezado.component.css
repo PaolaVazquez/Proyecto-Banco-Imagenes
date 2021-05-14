@@ -1,3 +1,7 @@
+#container {
+    width: 100%;
+}
+
 nav {
     background-color: #82A8A8;
 }
@@ -6,7 +10,7 @@ nav.navbar a {
     font-family: "Sans-serif";
     color: #ffff;
     font-size: 18px;
-    padding: 10px;
+    padding: 0px;
 }
 
 button {
