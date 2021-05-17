@@ -1,7 +1,3 @@
-#container {
-    width: 100%;
-}
-
 nav {
     background-color: #82A8A8;
 }
@@ -9,16 +5,15 @@ nav {
 nav.navbar a {
     font-family: "Sans-serif";
     color: #ffff;
-    font-size: 18px;
-    padding: 0px;
+    font-size: 19px;
+    padding-bottom: 5px;
+    margin: 6px;
 }
 
-button {
-    color: #ffff;
-    background-color: #82A8A8;
-    border: 0px solid #ffff;
-    border-radius: 4px;
-    font-family: "Sans-serif";
-    font-size: 18px;
-    margin-left: 10px;
+img {
+    margin: 1px;
+}
+
+ul {
+    padding-right: 4%;
 }

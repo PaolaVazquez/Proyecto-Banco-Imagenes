@@ -32,8 +32,8 @@
             }
             
             .banner-sec {
-                /* background: url("../../assets/imagenes/iniciosesion/foto1.jpg") no-repeat left bottom;*/
-                background-color: #6C2D32;
+                /* background: url("../../assets/imagenes/iniciosesion/foto1.jpg") no-repeat left bottom;
+                background-color: #6C2D32;*/
                 background-size: cover;
                 min-height: 500px;
                 border-radius: 0 10px 10px 0;
@@ -43,7 +43,6 @@
             .container {
                 background: #fff;
                 border-radius: 10px;
-                box-shadow: 15px 20px 0px #e4e4e479;
             }
             
             .carousel-inner {
@@ -63,7 +62,7 @@
             .login-sec .copy-text {
                 position: absolute;
                 width: 80%;
-                bottom: 45px;
+                bottom: 15px;
                 font-size: 14px;
                 text-align: center;
                 font-family: sans-serif;
@@ -129,10 +128,6 @@
             
             .banner-text p {
                 color: #fff;
-            }
-            
-            #row {
-                margin: 30px;
             }
             
             div {
