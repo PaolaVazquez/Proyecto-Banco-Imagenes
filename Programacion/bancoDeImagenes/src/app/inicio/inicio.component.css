@@ -18,10 +18,8 @@ h2 {
 }
 
 h3 {
-    padding-top: 5%;
-    padding-bottom: 2%;
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 40px;
     font-family: sans-serif;
 }
 
@@ -132,19 +130,20 @@ h4 {
 
 .showcase {
     background-color: #82A8A8;
-    height: 50%;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-right: 2%;
 }
 
 .showcase .showcase-text {
-    padding-left: 6%;
+    padding-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-left: 4%;
 }
 
 .showcase .showcase-img {
     min-height: 40rem;
-    background-size: cover;
 }
 
 @media (min-width: 768px) {
