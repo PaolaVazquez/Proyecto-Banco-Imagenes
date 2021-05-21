@@ -12,4 +12,6 @@ export class ProyectosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  
 }
