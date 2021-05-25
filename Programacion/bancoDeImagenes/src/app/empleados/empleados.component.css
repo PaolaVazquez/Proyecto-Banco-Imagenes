@@ -8,7 +8,8 @@ h1 {
     font-family: sans-serif;
     font-size: xx-large;
     color: #E68D90;
-    margin-top: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 table {
@@ -19,7 +20,7 @@ table {
 }
 
 .tbl-header {
-    background-color: #C7C7C7;
+    background-color: #E68D90;
 }
 
 .tbl-content {
@@ -33,7 +34,7 @@ th {
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
-    color: #2F2F2F;
+    color: #ffff;
 }
 
 td {
@@ -48,7 +49,7 @@ td {
 
 button {
     border: 0px solid #ffff;
-    background-color: white;
+    background-color: #ffff;
 }
 
 

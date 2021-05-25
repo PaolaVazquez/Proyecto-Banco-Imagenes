@@ -7,52 +7,55 @@
     <div class="row">
         <div class="col-4">
             <div class="list-group">
-                <span href="#" class="list-group-item list-group-item-action  active" style="background-color: #E68D90; border: #E68D90;" data-filter="all">
-                        All proyects
+                <span href="#" class="list-group-item list-group-item-action  active" style="background-color: #E68D90; border: #E68D90; font-size:large;" data-filter="all">
+                        Proyectos
                         </span>
                 <a href="#" class="list-group-item list-group-item-action" data-filter="category1">
-                        Portraits
-                        </a>
+                        Hoteles
+                </a>
                 <a href="#" class="list-group-item list-group-item-action" data-filter="category2">
-                        Nature
+                        Naturaleza
                         </a>
                 <a href="#" class="list-group-item list-group-item-action" data-filter="category3">
-                        Animals
+                        Animales
                         </a>
                 <a href="#" class="list-group-item list-group-item-action" data-filter="category4">
-                        Buildings
+                        Edificios
+                        </a>
+                <a href="#exampleModal" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Nuevo proyecto <img  clas="img-responsive" src="../../assets/imagenes/proyectos/proyecto.png" alt="">
+                        </a>
+                <a href="#exampleModal" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Nueva imágen <img  clas="img-responsive" src="../../assets/imagenes/proyectos/imagen.png" alt="">
                         </a>
             </div>
         </div>
-        <div class="col-8" style="margin-bottom:3%">
+        <div class=" col-8 ">
 
-            <div align="center">
-                <button class="filter-button" data-filter="all">Todos</button>
-                <button class="filter-button" data-filter="category1">Horizontal</button>
-                <button class="filter-button" data-filter="category2">Vertical</button>
-                <button class="filter-button" data-filter="category3">JPG</button>
-                <!--<input type="search" name="" placeholder="Search for..." class="search__field" style="width:40%; ">
-                <button type="submit" class="fa fa-search search__icon" style="border: 0px solid #82A8A8;
-                background-color: white;"><img   src="../../assets/imagenes/proyectos/buscar.png" alt="" style="align-items: center;"></button>-->
-                <form class="col-sm-6">
-                    <input class="form-control" type="search" placeholder="Search">
+            <div align="center" style="padding-bottom:3%">
+                <button class="filter-button " data-filter="all">Todos</button>
+                <button class="filter-button " data-filter="category1">Horizontal</button>
+                <button class="filter-button " data-filter="category2">Vertical</button>
+                <button class="filter-button " data-filter="category3">JPG</button>
+                <form class="col-sm-6 ">
+                    <input class="form-control " type="search " placeholder="Buscar... " style="text-align: left; border: 1px solid #82A8A8; ">
                 </form>
             </div>
 
-
-            <div class="gallery_product col-sm-4 col-xs-6 filter category1">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=122">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=122" />
+            <!--Galeria de imagenes-->
+            <div class="gallery_product col-sm-6 col-xs-6 filter category1">
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class=" img-responsive " alt="" src="https://picsum.photos/400/250?image=122" />
                     <div class='img-info'>
                         <h4>Image Title 1</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
                     </div>
                 </a>
             </div>
 
-            <div class="gallery_product col-sm-4 col-xs-6 filter category2">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=526">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=526" />
+            <div class="gallery_product col-sm-6 col-xs-6 filter category2">
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=526 " />
                     <div class='img-info'>
                         <h4>Image Title 2</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -61,101 +64,91 @@
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category3">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=626">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=626" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=626 " />
                     <div class='img-info'>
                         <h4>Image Title 3</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category1">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=626">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=626" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=626 " />
                     <div class='img-info'>
                         <h4>Image Title 4</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category2">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=486">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=486" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=486 " />
                     <div class='img-info'>
                         <h4>Image Title 5</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category3">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=846">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=846" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=846 " />
                     <div class='img-info'>
                         <h4>Image Title 6</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category1">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1066">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1066" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=1066 " />
                     <div class='img-info'>
                         <h4>Image Title 7</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category2">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=506">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=506" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=506 " />
                     <div class='img-info'>
                         <h4>Image Title 8</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category3">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1026">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1026" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=1026 " />
                     <div class='img-info'>
                         <h4>Image Title 9</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category1">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=1077">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=1077" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=1077 " />
                     <div class='img-info'>
                         <h4>Image Title 10</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category2">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=102">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=102" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=102 " />
                     <div class='img-info'>
                         <h4>Image Title 11</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
 
             <div class="gallery_product col-sm-4 col-xs-6 filter category3">
-                <a class="fancybox" rel="ligthbox" href="https://picsum.photos/400/250?image=106">
-                    <img class="img-responsive" alt="" src="https://picsum.photos/400/250?image=106" />
+                <a href="#exampleModal" class="fancybox" rel="ligthbox" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img class="img-responsive " alt=" " src="https://picsum.photos/400/250?image=106 " />
                     <div class='img-info'>
                         <h4>Image Title 12</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </a>
             </div>
@@ -163,6 +156,297 @@
     </div><br>
 </div>
 
+<!--Carousel Wrapper-->
+<div id="multi-item-example " class="carousel slide carousel-multi-item " data-ride="carousel " style="background-color: #E6EEEE; padding-left: 4%; padding-right: 4%; padding-bottom: 4%; ">
 
-<app-footer>
-</app-footer>
+    <h2 class="gallery-title " style="padding-top: 4%; margin-right: 4%; text-align:right; ">Mas imágenes...</h2>
+    <!--Controls-->
+    <div class="row justify-content-between ">
+        <div class="col-4 ">
+            <a class="btn-floating " href="#multi-item-example " data-slide="prev "><i class="fas fa-chevron-left "><img clas="img-responsive "  src="../../assets/imagenes/proyectos/s.png " alt="Anterior "></i></a>
+        </div>
+        <div class="col-4 " style="text-align: right; ">
+            <a class="btn-floating " href="#multi-item-example " data-slide="next "><i class="fas fa-chevron-right " ><img clas="img-responsive "  src="../../assets/imagenes/proyectos/s.png " alt="Siguiente " style="transform: rotate(180deg); "></i></a>
+        </div>
+    </div>
+    <!--/.Controls-->
+
+
+    <!--Slides-->
+    <div class="carousel-inner " role="listbox ">
+
+        <!--First slide-->
+        <div class="carousel-item active ">
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(50).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item ">
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="float:left ">
+                <div class="card mb-2 ">
+                    <img class="card-img-top " src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg " alt="Card image cap ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Card title</h4>
+                        <button class="button button2 " type="button "> Ver </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.Carousel Wrapper-->
+
+<app-footer></app-footer>
+
+<!-- Modal de nuevo proyecto -->
+
+<div class="modal fade bd-example-modal-lg " tabindex="-1 " id="exampleModal" aria-labelledby="exampleModalLabel " aria-hidden="true "> <br><br><br><br><br>
+    <div class=" modal-dialog modal-lg ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h2 class="modal-title " id="exampleModalLabel ">Registro de un nuevo proyecto</h2>
+                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                  </button>
+            </div>
+            <div class="modal-body ">
+                <div class="container-fluid ">
+                    <form>
+                        <div class="row ">
+                            <div class="col-md-4 ">
+                                <img src="../../assets/imagenes/iniciosesion/MKT_Logo 200-02.png " alt="MKTEAM " width="200px " style="margin-left:10%; margin-top: 20%; ">
+                            </div>
+                            <div class="col-md-8 ">
+                                <label for='proyecto'>Nombre del proyecto</label>
+                                <input type="text " id='proyecto' name='proyecto' data-error-message="El nombre es requerido " class='form-control' style="text-align: left; ">
+
+                                <label for='descripcion'>Descripción</label>
+                                <textarea type="textarea " id='descripcion' name='descripcion' data-error-message="La descripcion es requerida " minlength="20 " maxlength="200 " rows="5 " class='form-control'></textarea>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer ">
+                            <div class="input-group justify-content-end">
+                                <button class="button button1 " type="button ">Guardar</button>
+                                <button class="button button1 " type="button ">Buscar</button>
+                                <button class="button button1 " type="button " data-bs-dismiss="modal " aria-label="Close ">Modificar</button>
+                                <button class="button button1 " type="button " data-bs-dismiss="modal " aria-label="Close ">Eliminar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para nueva imágen-->
+
+<div class="modal fade bd-example-modal-lg " tabindex="-1 " id="exampleModal2" aria-labelledby="exampleModalLabel " aria-hidden="true "> <br><br><br><br><br>
+    <div class=" modal-dialog modal-lg ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h2 class="modal-title " id="exampleModalLabel ">Registro de nueva imágen</h2>
+                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                  </button>
+            </div>
+            <div class="modal-body "><br>
+                <div class="container-fluid ">
+                    <form>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-auto ">
+                                <input type="file" name="imagen " />
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-12 ">
+                                <label for='nombre'>Nombre</label>
+                                <input type="text" id='nombre' name='nombre' data-error-message="El nombre es requerido " class='form-control'>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <label for='proyecto'>Proyectos</label>
+                                <select id='proyecto' class="form-control selectpicker show-tick " size="1 " name='proyecto'>
+                                    <option value=" ">Hoteles</option>
+                                    <option value=" ">Naturaleza</option>
+                                    <option value=" ">Animales</option>
+                                    <option value=" ">Edificios</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 ">
+                                <label for='orientacion'>Orientación</label>
+                                <select id='orientacion' class="form-control selectpicker show-tick " size="1 " name='orientacion'>
+                                    <option value="Horizontal ">Horizontal</option>
+                                    <option value="Vertical ">Vertical</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+
+                            <div class="col-md-6 ">
+                                <label for='resolucion'>Resolución</label>
+                                <select id='resolucion' class="form-control selectpicker show-tick " size="1 " name='resolucion'>
+                                    <option value="640 x 480 píxeles ">SD - (640 x 480 píxeles)</option>
+                                    <option value="qHD - (960 x 540 píxeles) ">qHD - (960 x 540 píxeles)</option>
+                                    <option value="HD - (1.280 x 720 píxeles) ">HD - (1.280 x 720 píxeles)</option>
+                                    <option value="FHD - (1.920 x 1.080 píxeles) ">FHD - (1.920 x 1.080 píxeles)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 ">
+                                <label for='tipo'>Tipo de imágen</label>
+                                <select id='tipo' class="form-control selectpicker show-tick " size="1 " name='tipo'>
+                                    <option value="PNG ">PNG</option>
+                                    <option value="JPG ">JPG</option>
+                                    <option value="SVG ">SVG</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <label for='fecha'>Fecha de registro</label>
+                                <input type="date" id='fecha' name='fecha' data-required="true " data-error-message="La fecha es requerida " class='form-control'>
+                            </div>
+                            <div class="col-md-6 ">
+                                <label for='fechaActualizada'>Fecha de actualización</label>
+                                <input type="date" id='fechaActualizada' name='fechaActualizada' data-required="true" data-error-message="La fecha es requerida " class='form-control'>
+                            </div>
+                        </div><br>
+                    </form>
+                </div>
+
+
+                <div class="modal-footer ">
+                    <div class="input-group justify-content-end">
+                        <button class="button button1 " type="button ">Guardar</button>
+                        <button class="button button1 " type="button ">Buscar</button>
+                        <button class="button button1 " type="button " data-bs-dismiss="modal " aria-label="Close ">Modificar</button>
+                        <button class="button button1 " type="button " data-bs-dismiss="modal " aria-label="Close ">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para mostrar la imagen -->
+
+<div class="modal fade bd-example-modal-lg " tabindex="-1 " id="exampleModal3" aria-labelledby="exampleModalLabel " aria-hidden="true "> <br><br><br><br><br>
+    <div class=" modal-dialog modal-lg ">
+        <div class="modal-content ">
+            <div class="modal-header ">
+                <h2 class="modal-title " id="exampleModalLabel ">Proyecto</h2>
+                <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                  </button>
+            </div>
+            <div class="modal-body ">
+                <div class="container-fluid ">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 justify-content-md-center" align="center">
+                                <img src=" ../../assets/imagenes/iniciosesion/MKT_Logo 200-02.png " alt="MKTEAM " width="200px " style="margin: 10%;">
+                            </div>
+                            <div class="col-md-6 ">
+                                <div>
+                                    <label for='proyecto' style="margin-top: 10%;"><p>Nombre de la imágen</p> </label>
+                                </div>
+                                <div *ngIf="mostrarInfo ==false">
+                                    <a href="exampleModal" class="">
+                                        <p style="margin-left: 7px; ">Ver más detalles</p>
+                                    </a>
+                                </div>
+                                <div *ngIf="mostrarInfo ==true">
+                                    <p>Hola</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer ">
+                            <div class="input-group justify-content-end ">
+                                <button class="button button1 " type="button ">Descargar</button>
+                                <button class="button button1 " type="button" data-bs-dismiss="modal" aria-label="Close" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal2">Editar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
