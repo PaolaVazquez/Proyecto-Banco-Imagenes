@@ -24,7 +24,7 @@ h3 {
 }
 
 h4 {
-    padding-bottom: 3%;
+    padding-bottom: 4%;
     font-family: sans-serif;
 }
 
@@ -130,8 +130,6 @@ h4 {
 
 .showcase {
     background-color: #82A8A8;
-    padding-top: 2%;
-    padding-bottom: 2%;
     padding-right: 2%;
 }
 
@@ -150,6 +148,14 @@ h4 {
     .showcase .showcase-text {
         padding: 7rem;
     }
+}
+
+iframe {
+    padding: 5%;
+}
+
+.justify-content-between {
+    margin-bottom: 2%;
 }
 
 input {
