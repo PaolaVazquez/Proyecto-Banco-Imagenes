@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var morgan = require('morgan');
+const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var empleadosRouter = require('./routes/empleados');
@@ -11,6 +12,14 @@ var proyectosRouter = require('./routes/proyectos');
 var imagesRouter = require('./routes/imagenes');
 
 var app = express();
+
+//definir url para peticiones cruzadas
+app.use(cors({
+    "origin": "*",
+    "methods": "GET, POST, PUT, DELETE",
+    "preflightContinue": false,
+    "optionsSuccessStatus": 204
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,7 +41,6 @@ app.use('/', indexRouter);
 app.use('/empleados', empleadosRouter);
 app.use('/proyectos', proyectosRouter);
 app.use('/imagenes', imagesRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
