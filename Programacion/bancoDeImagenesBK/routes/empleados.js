@@ -7,4 +7,8 @@ router.get('/', function(req, res, next) {
     res.send('Hola empleados');
 });
 
+router.get('/add', function(req, res, next) {
+    res.send('Form');
+});
+
 module.exports = router;
