@@ -1,6 +1,8 @@
-import {Request, Response} from 'express';
-
+import express, {Request, Response} from 'express';
 import pool from '../database';
+const { check, validationResult } = require('express-validator');
+import {Empleado} from '../models/empleado';
+
 
 class EmpleadosContoller{
      public async list (req: Request, res: Response) {

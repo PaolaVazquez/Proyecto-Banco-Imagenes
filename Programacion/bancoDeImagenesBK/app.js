@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var morgan = require('morgan');
 const cors = require('cors');
+const passport = require('passport');
 
 var indexRouter = require('./routes/index');
 var empleadosRouter = require('./routes/empleados');
@@ -12,6 +13,7 @@ var proyectosRouter = require('./routes/proyectos');
 var imagesRouter = require('./routes/imagenes');
 
 var app = express();
+require('./lib/passport');
 
 //definir url para peticiones cruzadas
 app.use(cors({
@@ -35,6 +37,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(passport.initialize());
+app.use(passport.session());
 
 //Rutas
 app.use('/', indexRouter);
