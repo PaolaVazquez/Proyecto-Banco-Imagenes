@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 const pool = require('../database');
-const passport = require('passport');
 const { check, validationResult } = require('express-validator');
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 /* METODOS PARA CRUD*/
 router.get('/', async(req, res, next) => {
@@ -58,14 +58,41 @@ router.post('/', [
 
 });
 
-router.post('iniciosesion', (req, res) => {
-    passport.authenticate('local.signup', {
-        successRedirect: '/inicio',
-        failureRedirect: '/iniciosesion',
-        failureFlash: true
-    })
-    console.log('iniciar sesion');
+router.post('/iniciosesion', [
+    check('usuario').isLength({ min: 3 }),
+    check('password').isLength({ min: 5 })
+], async function(req, res) {
+    const errores = validationResult(req);
+    if (!errores.isEmpty()) {
+        return res.status(422).json({ error: errores.array() });
+    }
+
+    const empleado = await pool.query('SELECT * FROM empleados WHERE usuario = ?', [req.body.usuario]);
+
+    if (empleado.length > 0) {
+
+        validaPass = await bcrypt.compare(req.body.password, empleado[0].password);
+
+        if (!validaPass) {
+            res.status(400).json({ text: 'Usuario o contraseña incorrectos' });
+        } else {
+
+
+            jwt.sign({
+                nombre: empleado[0].nombre,
+                apellidos: empleado[0].apellidos,
+                puesto: empleado[0].puesto
+            }, 'c0ntr4s3n14', (err, token) => {
+                res.json({
+                    token
+                });
+            });
+        }
+    } else {
+        res.status(400).json({ text: 'Usuario o contraseña incorrectos' });
+    }
 });
+
 
 router.put('/:usuario', [
     check('nombre').isLength({ min: 1 }),
