@@ -69,27 +69,30 @@ router.post('/iniciosesion', [
 
     const empleado = await pool.query('SELECT * FROM empleados WHERE usuario = ?', [req.body.usuario]);
 
-    if (empleado.length > 0) {
+    if (!empleado.length > 0) {
+        res.status(400).json({ text: 'Usuario o contraseña incorrectos' });
+    }
 
-        validaPass = await bcrypt.compare(req.body.password, empleado[0].password);
+    validaPass = await bcrypt.compare(req.body.password, empleado[0].password);
 
-        if (!validaPass) {
-            res.status(400).json({ text: 'Usuario o contraseña incorrectos' });
-        } else {
+    if (!validaPass) {
+        res.status(400).json({ text: 'Usuario o contraseña incorrectos' });
+    } else {
 
+        const token = jwt.sign({
+            nombre: empleado[0].nombre,
+            puesto: empleado[0].puesto
+        }, 'c0ntr4s3n14');
 
-            jwt.sign({
+        emp = {
+                jwt: token,
                 nombre: empleado[0].nombre,
                 apellidos: empleado[0].apellidos,
                 puesto: empleado[0].puesto
-            }, 'c0ntr4s3n14', (err, token) => {
-                res.json({
-                    token
-                });
-            });
-        }
-    } else {
-        res.status(400).json({ text: 'Usuario o contraseña incorrectos' });
+            }
+            //res.json(token);
+        res.send({ emp });
+
     }
 });
 
