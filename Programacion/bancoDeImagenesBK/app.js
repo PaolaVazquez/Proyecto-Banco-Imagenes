@@ -40,11 +40,15 @@ app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 //Rutas
 app.use('/', indexRouter);
 app.use('/empleados', empleadosRouter);
 app.use('/proyectos', proyectosRouter);
 app.use('/imagenes', imagesRouter);
+
+//Aquí se almacenaran las imagenes
+app.use('/uploads', express.static(path.resolve('uploads')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
