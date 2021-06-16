@@ -47,7 +47,6 @@ router.get('/:proyecto', async(req, res, next) => {
 router.post('/', uploadImage, async(req, res) => {
 
     const { proyecto, descripcion } = req.body;
-
     const newproyecto = {
         imagen: req.file.path,
         proyecto,
