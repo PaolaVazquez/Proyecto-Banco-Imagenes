@@ -44,20 +44,39 @@ router.get('/:proyecto', async(req, res, next) => {
     res.status(404).json({ text: 'El proyecto no existe' });
 });
 
-router.post('/', uploadImage, async(req, res) => {
+router.post('/', uploadImage, async(req, res, next) => {
+    const imagen = req.body;
+    if (!imagen) {
+        const error = new Error('No hay imágen');
+        return error;
+    }
 
-    const { proyecto, descripcion } = req.body;
     const newproyecto = {
         imagen: req.file.path,
-        proyecto,
-        descripcion
+        proyecto: req.body.proyecto,
+        descripcion: req.body.descripcion
     };
 
     await pool.query('INSERT INTO proyectos set ?', [newproyecto]);
 
-    res.json({ message: 'Proyecto creado' });
+    res.json(newproyecto);
     console.log(newproyecto);
 });
+
+/*router.post('/', uploadImage, (req, res, next) => {
+    const imagen = req.body;
+    if (!imagen) {
+        const error = new Error('No hay imágen');
+        error.http.StatusCode = 400;
+        return error;
+    }
+    const im = {
+        imagen: req.file.path
+    }
+
+    console.log(im);
+
+});*/
 
 router.put('/:proyecto', uploadImage, async(req, res) => {
     const { proyecto } = req.params;
